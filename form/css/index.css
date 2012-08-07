@@ -68,7 +68,6 @@ li {
 }
 .b-qa__a {
 	margin-left: 1em;
-	display: none;
 }
 
 
@@ -78,11 +77,32 @@ li {
 
 
 
+@media screen {
 
-.b-layout {
-	margin: 3em auto;
-	padding: 0 1em 0 2em;
-	min-width: 400px;
-	max-width: 900px;
+	.b-layout {
+		margin: 3em auto;
+		padding: 0 1em 0 2em;
+		min-width: 400px;
+		max-width: 900px;
+	}
+
+	.b-qa__a {
+		display: none;
+	}
+
 }
 
+
+@media print {
+
+	.b-layout {
+		margin: 0 3em;
+	}
+
+	.b-local {
+		color: inherit;
+		border: 0;
+		font-weight: bold;
+	}
+
+}
